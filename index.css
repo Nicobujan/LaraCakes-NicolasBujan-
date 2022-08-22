@@ -43,7 +43,9 @@ header {
     text-decoration: none;
     color: #d5918e;
     margin-left: 50px;
+    animation:slide-right .5s cubic-bezier(.25,.46,.45,.94) both 
 }
+
 
 .enlace-logo h1:hover {
     color: white;
@@ -55,11 +57,13 @@ nav ul li {
     display: inline-block;
     margin-bottom: 10px;
     margin-right: 20px;
+   
 }
 
 nav ul li a {
     text-decoration: none;
     color: #d5918e;
+    
 }
 
 nav ul li a:hover {
@@ -310,7 +314,7 @@ main div ul li a:hover {
     flex-direction: row;
     align-items: center;
     text-align: center;
-
+   animation:rotate-scale-up-ver .65s linear both
 }
 
 .primeras img {
@@ -381,6 +385,55 @@ footer {
 .redes-sociales a i:hover {
     color: white;
 }
+
+/* ----------------------------------------------------------------------------------ANIMACIONES---------------------------------------------------------------------------------- */
+
+
+
+/* ---------------------------LARA CAKES H1-------------------------- */
+@keyframes slide-right{0%{transform:translateX(0)}100%{transform:translateX(100px)}}
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ----------------------------------------------------------------------------------MEDIAQUERIS---------------------------------------------------------------------------------- */
 

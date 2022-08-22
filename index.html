@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="./fotos/LARAFONDO.jfif" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Lara Cakes</title>
 
 </head>
@@ -20,7 +21,7 @@
             </a>
         </div>
 
-        <div class="pestañas">
+        <div class="pestañas" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <nav>
                 <ul>
                     <li><a href="">Inicio</a></li>
@@ -50,7 +51,7 @@
 
 
         <section class="image">
-            <div class="primeras">
+            <div class="primeras" >
                 <img class="torta" src="./fotos/muestrados.jfif" alt="tortas" width="300px" height="300px">
                 <img class="estructura" src="./fotos/muestrauno.jfif" alt="estructura" width="300px" height="300px">
                 <img class="paleta" src="./fotos/muestratres.jfif" alt="paletas" width="300px" height="300px">
@@ -84,7 +85,10 @@
     <script src="https://kit.fontawesome.com/4c282a460c.js" crossorigin="anonymous"></script>
 
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
