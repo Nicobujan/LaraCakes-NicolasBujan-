@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Mouse+Memoirs&family=Pacifico&family=Shrikhand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#grilla {
+    /* height: 100%; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6rem 1fr 9rem;
+    grid-template-areas: "header"
+        "main"
+        "footer";
+
+
+
+}
+
+/* ----------------------------------------------------------------------------------HEADER---------------------------------------------------------------------------------- */
+
+header {
+    background-color: #F6E3DF;
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.enlace-logo {
+    text-decoration: none;
+
+}
+
+.enlace-logo h1 {
+    font-family: 'Shrikhand', cursive;
+    text-decoration: none;
+    color: #d5918e;
+    margin-left: 50px;
+}
+
+.enlace-logo h1:hover {
+    color: white;
+}
+
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #d5918e;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+
+
+/* ----------------------------------------------------------------------------------MAIN---------------------------------------------------------------------------------- */
+
+/* ------------------INDEX--------------------- */
+
+#index_main {
+    background-image: url(./fotos/FONDONUEVO.jpg);
+    background-size: cover;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* ------------------CONTACTO--------------------- */
+#main_contacto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #d5918e;
+}
+
+.formulario {
+    height: 100%;
+    width: 100%;
+}
+
+.formulario h1 {
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 50px;
+}
+
+
+
+fieldset {
+    padding: 50px;
+    border: none;
+}
+
+fieldset div textarea {
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    margin-left: 92px;
+    background-color: #F6E3DF;
+    border-radius: 20px;
+    border: 4px solid black;
+}
+
+.nombre input {
+    background-color: #F6E3DF;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.mail input {
+    background-color: #F6E3DF;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.nombre label {
+    font-weight: bold;
+}
+
+.mail label {
+    font-weight: bold;
+}
+
+legend {
+    font-weight: bold;
+}
+
+/* ------------------COMO COMPRAR--------------------- */
+.como-comprar {
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding: 50px;
+}
+
+.como-comprar div h1 {
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 100px;
+}
+
+.como-comprar div p {
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+
+}
+
+
+.pasos ol li {
+    margin: 20px;
+    font-family: 'DynaPuff', cursive;
+    font-size: 19px;
+
+}
+
+/* ------------------PRODUCTOS--------------------- */
+#productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./fotos/fondonashe.jfif);
+
+}
+
+section div h2 {
+    text-align: center;
+    background-color: #d5918e;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    border: 5px solid wheat;
+}
+
+section div img {
+    margin: 50px;
+    border-radius: 10px;
+    border: 5px solid salmon;
+}
+
+section div img:hover {
+    border-color: white;
+}
+
+/* ------------------QUIENES SOMOS--------------------- */
+.quienes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.quienes div {
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+
+}
+
+.quienes div h1 {
+    text-align: center;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-size: 100px;
+    text-decoration: underline;
+    color: #d5918e;
+}
+
+.quienes div p {
+    padding: 10px;
+    justify-content: center;
+    font-family: 'DynaPuff', cursive;
+    font-size: 25px;
+}
+
+.quienes div img {
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    border-radius: 25px;
+    border: 7px solid #d5918e;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------MENU--------------------------------------- */
+
+/* ------------------INDEX AND PRODUCTOS--------------------- */
+
+.menu {
+    background-color: #d5918e;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.menu ul {
+    margin-top: 10px;
+
+}
+
+.menu ul li {
+    list-style: none;
+    color: aquamarine;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 35px;
+
+
+}
+
+main div ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 25px;
+    padding: 15px;
+}
+
+main div ul li a:hover {
+    color: white;
+}
+
+/* ---------------------------------------IMAGES--------------------------------------- */
+
+/* ------------------INDEX--------------------- */
+
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 60px;
+    width: 100%;
+    align-items: center;
+
+
+}
+
+.primeras {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+}
+
+.primeras img {
+    margin-inline: 100px;
+    border-radius: 20px;
+    border: 5px solid black;
+
+}
+
+
+.segundas {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.segundas img {
+    margin-inline: 100px;
+    border-radius: 20px;
+    border: 5px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------------FOOTER---------------------------------------------------------------------------------- */
+
+footer {
+    background-color: #F6E3DF;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor {
+    margin: 25px;
+}
+
+.contenedor h2 {
+    color: #d5918e;
+}
+
+.redes-sociales {
+    margin: 10px;
+}
+
+.redes-sociales a {
+    margin-inline: 35px;
+}
+
+.redes-sociales a i {
+    text-decoration: none;
+    color: #d5918e;
+}
+
+.redes-sociales a i:hover {
+    color: white;
+}
+
+/* ----------------------------------------------------------------------------------MEDIAQUERIS---------------------------------------------------------------------------------- */
+
+
+
+@media screen and (max-width: 535px) {
+
+    .primeras {
+        flex-direction: column;
+    }
+
+    .segundas {
+        flex-direction: column;
+    }
+
+    .primeras img {
+        margin: 20px;
+    }
+
+    .segundas img {
+        margin: 20px;
+    }
+
+    fieldset div textarea {
+        width: 250px;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    #menu_prod ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: justify;
+
+    }
+
+    section div h2 {
+        background-color: beige;
+    }
+
+    .quienes div h1 {
+        font-size: 70px;
+
+    }
+
+    .quienes div p {
+        font-size: 20px;
+
+    }
+
+    .quienes div img {
+        width: 500px;
+
+    }
+
+}
