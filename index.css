@@ -43,12 +43,15 @@ header {
     text-decoration: none;
     color: #d5918e;
     margin-left: 50px;
-    animation:slide-right .5s cubic-bezier(.25,.46,.45,.94) both 
+    animation:slide-right .5s cubic-bezier(.25,.46,.45,.94) both;
+    transition: all 0.7s;
 }
 
 
 .enlace-logo h1:hover {
     color: white;
+    
+    
 }
 
 
@@ -57,13 +60,13 @@ nav ul li {
     display: inline-block;
     margin-bottom: 10px;
     margin-right: 20px;
-   
+
 }
 
 nav ul li a {
     text-decoration: none;
     color: #d5918e;
-    
+
 }
 
 nav ul li a:hover {
@@ -77,7 +80,7 @@ nav ul li a:hover {
 /* ------------------INDEX--------------------- */
 
 #index_main {
-    background-image: url(./fotos/FONDONUEVO.jpg);
+    background-image:radial-gradient(circle,#F6E3DF , #D5918E,#D5918E);
     background-size: cover;
     grid-area: main;
     display: flex;
@@ -195,14 +198,18 @@ section div h2 {
     border: 5px solid wheat;
 }
 
-section div img {
+#img_prod div img {
     margin: 50px;
     border-radius: 10px;
     border: 5px solid salmon;
+    width : 350px ;
+    height:  350px;  
 }
 
-section div img:hover {
+#img_prod div img:hover {
     border-color: white;
+    
+    
 }
 
 /* ------------------QUIENES SOMOS--------------------- */
@@ -296,6 +303,24 @@ main div ul li a:hover {
 
 /* ------------------INDEX--------------------- */
 
+#img_main div img {
+    margin: 50px;
+    border-radius: 10px;
+    border: 5px solid salmon;
+    width : 350px ;
+    height:  350px;  
+    transition: height .5s, width .5s;
+}
+
+#img_main div img:hover {
+    border-color: white;
+    height: 400px;
+    width:400px;
+    
+}
+
+
+
 .image {
     display: flex;
     flex-direction: column;
@@ -317,27 +342,18 @@ main div ul li a:hover {
    animation:rotate-scale-up-ver .65s linear both
 }
 
-.primeras img {
-    margin-inline: 100px;
-    border-radius: 20px;
-    border: 5px solid black;
 
-}
+
+
 
 
 .segundas {
     display: flex;
     flex-direction: row;
-    margin: 2rem;
     align-items: center;
     text-align: center;
 }
 
-.segundas img {
-    margin-inline: 100px;
-    border-radius: 20px;
-    border: 5px solid black;
-}
 
 
 
@@ -399,7 +415,7 @@ footer {
 
 
 
- 
+
 
 
 
