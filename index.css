@@ -310,6 +310,7 @@ main div ul li a:hover {
     width : 350px ;
     height:  350px;  
     transition: height .5s, width .5s;
+    animation:rotate-scale-down 1s linear both
 }
 
 #img_main div img:hover {
@@ -383,6 +384,7 @@ footer {
 
 .contenedor h2 {
     color: #d5918e;
+    animation: efecto_instagram .7s ease-in-out infinite both;
 }
 
 .redes-sociales {
@@ -396,10 +398,27 @@ footer {
 .redes-sociales a i {
     text-decoration: none;
     color: #d5918e;
+
 }
 
 .redes-sociales a i:hover {
     color: white;
+}
+
+.fa-facebook:hover{
+    font-size: 30px;
+}
+
+.fa-twitter:hover{
+    font-size: 30px;
+}
+
+.fa-instagram:hover{
+    font-size: 30px;
+}
+
+.fa-whatsapp:hover{
+    font-size: 30px;
 }
 
 /* ----------------------------------------------------------------------------------ANIMACIONES---------------------------------------------------------------------------------- */
@@ -411,11 +430,30 @@ footer {
 
 
 
+/* ---------------------------ANIMACION IMG MAIN-------------------------- */
+
+
+ @keyframes rotate-scale-down{0%{transform:scale(1) rotateZ(0)}50%{transform:scale(.5) rotateZ(180deg)}100%{transform:scale(1) rotateZ(360deg)}}
 
 
 
 
+ @keyframes efecto_instagram{
+    0%{
+        transform:scale(1);
+        color:#e0988a;
+    }
 
+    50%{
+        transform:scale(1.3);
+        color:#D5918E;
+    }
+
+    100%{
+        transform:scale(1);
+        color:#ca817d;
+    }
+}
 
 
 
